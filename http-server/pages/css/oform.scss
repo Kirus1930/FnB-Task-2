@@ -1,0 +1,9 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #d33f1e;
+
+body {
+    p{
+        font: 100% $font-stack;
+        color:$primary-color;
+    }
+}
