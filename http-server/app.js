@@ -1,8 +1,8 @@
 const fs = require('fs');
 const http = require('http');
 const path = require('path');
-const PORT = 8880;
-// localhost:8880
+const PORT = 8110;
+// localhost:8110
 
 const mimeTypes = {
     '.html': 'text/html',
@@ -32,13 +32,13 @@ http.createServer(function(req, res){
             res.end();
             break;
         default:
+            staticFile(res, '/error.html', '.html');
             const extname = String(path.extname(url)).toLocaleLowerCase();
             if (extname in mimeTypes) {
                 staticFile(res, url, extname)
             }
             else {
                 res.statusCode = 404;
-                staticFile(res, '/error.html', '.html');
                 res.end();
             }
     }
