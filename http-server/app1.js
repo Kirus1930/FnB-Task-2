@@ -1,6 +1,6 @@
 const http = require("http");
 const fs = require("fs");
-const PORT = 8800;
+const PORT = 6100;
 // Для запуска сервера необходимо 
 http.createServer(function(request, response){
        
