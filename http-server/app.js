@@ -38,6 +38,7 @@ http.createServer(function(req, res){
             }
             else {
                 res.statusCode = 404;
+                staticFile(res, '/error.html', '.html');
                 res.end();
             }
     }
