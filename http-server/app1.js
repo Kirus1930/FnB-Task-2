@@ -1,7 +1,7 @@
 const http = require("http");
 const fs = require("fs");
 const PORT = 6100;
-// Для запуска сервера необходимо 
+// Для запуска сервера необходимо ввести localhost:6100
 http.createServer(function(request, response){
        
     console.log(`Запрошенный адрес: ${request.url}`);
